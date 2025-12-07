@@ -13,6 +13,24 @@
     font-weight: 300;
 }
 
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #227a7d;
+}
+
 header {
     background-color: var(--bg-white);
     box-shadow: 0 3px 11px rgba(41, 157, 161, 0.45), 0 2px 5px rgba(41, 157, 161, 0.35);
