@@ -75,6 +75,63 @@ header {
     gap: 20px; 
 }
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu.active {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.close-menu {
+    position: absolute;
+    top: 55px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-menu:hover {
+    transform: rotate(90deg);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.mobile-nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-links li a:hover {
+    color: var(--main-color);
+}
+
 
 @media (min-width: 768px) {
 
@@ -87,11 +144,15 @@ header {
         gap: 25px;       
         margin: 0 auto; 
     }
+
+    .mobile-menu {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .navbar{
-        padding: 8px 60px;
+        padding: 4px 60px;
     }
 
     .logo {
