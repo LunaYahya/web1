@@ -424,6 +424,213 @@ header {
     }
 }
 
+/* Featured Books Section */
+.featured-books {
+    padding: 80px 60px;
+    background-color: var(--bg-white);
+    overflow: hidden;
+}
+
+.featured-books-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+
+.featured-books-container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar for featured books */
+.featured-books-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.featured-books-container::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 10px;
+}
+
+.featured-books-container::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.featured-books-container::-webkit-scrollbar-thumb:hover {
+    background: #227a7d;
+}
+
+.book-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 280px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(41, 157, 161, 0.3);
+}
+
+.book-image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-image img {
+    transform: scale(1.05);
+}
+
+.book-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.book-author {
+    font-size: 0.95rem;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.book-genres {
+    font-size: 0.9rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.book-price {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.old-price {
+    font-size: 1rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.book-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--main-color);
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    border: 1px solid var(--main-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: var(--main-color);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+/* Tablet screens - show 3 books */
+@media (max-width: 1200px) {
+    .book-card {
+        min-width: 260px;
+        max-width: 260px;
+    }
+}
+
+/* Tablet screens - show 2 books */
+@media (max-width: 900px) {
+    .featured-books {
+        padding: 60px 40px;
+    }
+
+    .book-card {
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    .book-image img {
+        height: 300px;
+    }
+}
+
+/* Mobile screens - show 1 book */
+@media (max-width: 600px) {
+    .featured-books {
+        padding: 60px 20px;
+    }
+
+    .featured-books-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .featured-books-container {
+        gap: 15px;
+    }
+
+    .book-card {
+        min-width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        padding: 15px;
+    }
+
+    .book-image img {
+        height: 350px;
+    }
+
+    .book-card-title {
+        font-size: 1.1rem;
+    }
+
+    .current-price {
+        font-size: 1.1rem;
+    }
+
+    .old-price {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+    .book-card {
+        min-width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
 /* About Section */
 .about {
     padding: 80px 60px;
