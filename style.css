@@ -275,9 +275,11 @@ header {
         max-width: 100%;
     }
 
-    .hero-title {
-        font-size: 2.5rem;
+    .hero-title , .highlight{
+        font-size:3rem;
     }
+
+
 
     .hero-description {
         text-align: center;
@@ -289,6 +291,7 @@ header {
         padding: 4px 20px;
     }
 
+
     .logo {
         width: 70px;
         height: 40px;
@@ -298,9 +301,7 @@ header {
         padding: 80px 20px 40px;
     }
 
-    .hero-title {
-        font-size: 2rem;
-    }
+
 
     .hero-description {
         font-size: 0.9rem;
@@ -320,9 +321,7 @@ header {
         height: 250px;
     }
 
-    .hero-title {
-        font-size: 3.55rem;
-    }
+
     
     .hero-description {
         font-size: 1.1rem;
@@ -433,7 +432,7 @@ header {
 
 .featured-books-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 60px;
@@ -708,9 +707,11 @@ header {
         max-width: 100%;
     }
 
-    .about-title {
+    .about-title, .featured-books-title {
         font-size: 2rem;
     }
+
+    
 
     .about-description {
         text-align: center;
@@ -721,8 +722,9 @@ header {
     .about {
         padding: 60px 20px;
     }
+ 
 
-    .about-title {
+    .about-title, .featured-books-title {
         font-size: 1.8rem;
     }
 
