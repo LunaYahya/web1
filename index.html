@@ -3,282 +3,638 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#">
+          <img class="logo" src="/images/logo.png" />
+        </a>
 
-    <section class="new-arrivals">
-    <h2>New Arrivals</h2>
-    <div class="arrivals-row">
-       
-        <div class="arrival-card">
-            <img src="images/arrival_1.jpg" alt="arrival_1">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-             <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">Arrivals</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- Mobile Menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <div class="mobile-menu">
+          <label for="menu-toggle" class="close-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <ul class="mobile-nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Featured</a></li>
+            <li><a href="#">Arrivals</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
 
-         <div class="arrival-card">
-            <img src="images/arrival_2.jpg" alt="arrival_2">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-             <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
-            </div>
-
-            
-
-            <div class="arrival-card">
-            <img src="images/arrival_3.jpg" alt="arrival_3">
-            <h3>New Arrivals</h3>
-              <div class="stars">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i> 
-              </div>
-
-            <button class="learn-more">Learn More</button>
-
-            </div>
-
-             <div class="arrival-card">
-            <img src="images/arrival_4.jpg" alt="arrival_4">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
+        <div class="actions">
+          <a href="#" class="icon-link"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="icon-link"><i class="fa-solid fa-heart"></i></a>
         </div>
+        <label for="menu-toggle" class="hamburger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+    </header>
 
-         <div class="arrival-card">
-            <img src="images/arrival_5.jpg" alt="arrival_5">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            WELCOME TO<br />
+            <span class="highlight">BOOK STORE</span>
+          </h1>
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias atque laborum non fuga ex deserunt. Exercitationem velit
+            ducimus praesentium, obcaecati hic voluptate id tenetur fuga illum
+            quidem omnis? Rerum?
+          </p>
+          <a href="#" class="hero-btn">Learn More</a>
         </div>
-    </div>
-    <div class="arrivals-row">
-         <div class="arrival-card">
-            <img src="images/arrival_6.jpg" alt="arrival_6">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
+        <div class="hero-image">
+          <img src="images/table.png" alt="Books Collection" />
         </div>
-        <div class="arrival-card">
-            <img src="images/arrival_7.jpg" alt="arrival_7">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
-        </div>
-        <div class="arrival-card">
-            <img src="images/arrival_8.webp" alt="arrival_8">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
-        </div>
-        <div class="arrival-card">
-            <img src="images/arrival_9.jpg" alt="arrival_9">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
-        </div>
-        <div class="arrival-card">
-            <img src="images/arrival_10.jpg" alt="arrival_10">
-            <h3>New Arrivals</h3>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i> 
-            </div>
-            <button class="learn-more">Learn More</button>
-         </div>
-
-
-     </div>
-      
+      </div>
     </section>
 
-<section class="reviews">
-    <h2>Reviews</h2>
+    <section class="features">
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="feature-title">Fast Delivery</h3>
+          <p class="feature-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="feature-title">24 x 7 Services</h3>
+          <p class="feature-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-tag"></i>
+          </div>
+          <h3 class="feature-title">Best Deal</h3>
+          <p class="feature-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h3 class="feature-title">Secure Payment</h3>
+          <p class="feature-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <div class="reviews-container">
+    <section class="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/about.png" alt="About Us" />
+        </div>
+        <div class="about-content">
+          <h2 class="about-title">About Us</h2>
+          <p class="about-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            cumque atque dolor corporis architecto. Voluptate expedita molestias
+            maxime officia natus consectetur dolor quisquam illo? Quis illum
+            nostrum perspiciatis laboriosam perferendis? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Minus ad eius saepe architecto
+            aperiam laboriosam voluptas nobis voluptates id amet eos repellat
+            corrupti harum consectetur, dolorum dolore blanditiis quam quo.
+          </p>
+          <a href="#" class="about-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
 
-        <div class="review-card">
-            <img src="images/review_1.png" class="profile">
-            <h3>John Deo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos doloribus iure distinctio!</p>
-            <div class="stars">
-                
+    <section class="featured-books">
+      <h2 class="featured-books-title">Featured Books</h2>
+      <div class="featured-books-container">
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_1.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_2.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_3.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_4.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_5.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_6.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_7.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_8.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_9.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_10.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_11.jpg" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_12.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_13.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_14.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+
+        <div class="book-card">
+          <div class="book-image">
+            <img src="/images/book_15.png" alt="Book Cover" />
+          </div>
+          <h3 class="book-card-title">Featured Books</h3>
+          <p class="book-author">John Deo</p>
+          <p class="book-genres">Thriller, Horror, Romance</p>
+          <div class="book-price">
+            <span class="current-price">$25.50</span>
+            <span class="old-price">$28.60</span>
+          </div>
+          <a href="#" class="book-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="new-arrivals">
+      <h2>New Arrivals</h2>
+      <div class="arrivals-row">
+        <div class="arrival-card">
+          <img src="images/arrival_1.jpg" alt="arrival_1" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span class="quote">❞</span>
+          </div>
+          <button class="learn-more">Learn More</button>
         </div>
-         <div class="review-card">
-            <img src="images/review_2.png" class="profile">
-            <h3>John Deo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos doloribus iure distinctio!</p>
-            <div class="stars">
-                
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <span class="quote">❞</span>
+
+        <div class="arrival-card">
+          <img src="images/arrival_2.jpg" alt="arrival_2" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="arrival-card">
+          <img src="images/arrival_3.jpg" alt="arrival_3" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+
+          <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="arrival-card">
+          <img src="images/arrival_4.jpg" alt="arrival_4" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="arrival-card">
+          <img src="images/arrival_5.jpg" alt="arrival_5" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+      <div class="arrivals-row">
+        <div class="arrival-card">
+          <img src="images/arrival_6.jpg" alt="arrival_6" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="arrival-card">
+          <img src="images/arrival_7.jpg" alt="arrival_7" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="arrival-card">
+          <img src="images/arrival_8.webp" alt="arrival_8" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="arrival-card">
+          <img src="images/arrival_9.jpg" alt="arrival_9" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="arrival-card">
+          <img src="images/arrival_10.jpg" alt="arrival_10" />
+          <h3>New Arrivals</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2>Reviews</h2>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <img src="images/review_1.png" class="profile" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos
+            doloribus iure distinctio!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="quote">❞</span>
+        </div>
+        <div class="review-card">
+          <img src="images/review_2.png" class="profile" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos
+            doloribus iure distinctio!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="quote">❞</span>
         </div>
 
         <div class="review-card">
-            <img src="images/review_3.png" class="profile">
-            <h3>John Deo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos doloribus iure distinctio!</p>
-            <div class="stars"> 
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-
-            </div>
-            <span class="quote">❞</span>
+          <img src="images/review_3.png" class="profile" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos
+            doloribus iure distinctio!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="quote">❞</span>
         </div>
 
-         <div class="review-card">
-            <img src="images/review_4.png" class="profile">
-            <h3>John Deo</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos doloribus iure distinctio!</p>
-            <div class="stars"> 
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
-
-            </div>
-            <span class="quote">❞</span>
+        <div class="review-card">
+          <img src="images/review_4.png" class="profile" />
+          <h3>John Deo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neius eos
+            doloribus iure distinctio!
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="quote">❞</span>
         </div>
-      
-    </div>
-</section>
-      
+      </div>
+    </section>
+
     <div class="img_container">
-        <img src="images/banner.jpg" alt="degital book">
-        <button class="Learn_More"> Learn More </button>
+      <img src="images/banner.jpg" alt="degital book" />
+      <button class="Learn_More">Learn More</button>
+    </div>
 
-        </div>
+    <section class="blog-section">
+      <h2>Our Blog</h2>
 
-   
-   <section class="blog-section">
-    <h2>Our Blog</h2>
-
-    <div class="blog-container">
-
+      <div class="blog-container">
         <div class="blog-card">
-            <img src="images/blog_1.jpg" alt="">
-            <div class="content">
+          <img src="images/blog_1.jpg" alt="" />
+          <div class="content">
             <h3>Blogger</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil veritatis necessitatibus blanditiis doloribus sint consequuntur illo hic minus, ea ab!</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+              veritatis necessitatibus blanditiis doloribus sint consequuntur
+              illo hic minus, ea ab!
+            </p>
 
             <div class="icons">
-                <i class="fa-solid fa-calendar"></i>
-                <i class="fa-solid fa-heart"></i>
-             
+              <i class="fa-solid fa-calendar"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
+          </div>
         </div>
-    </div>
         <div class="blog-card">
-            <img src="images/blog_2.jpg" alt="">
-            <div class="content">
+          <img src="images/blog_2.jpg" alt="" />
+          <div class="content">
             <h3>Blogger</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates vel molestias provident in sapiente alias, placeat ipsam atque est?</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae voluptates vel molestias provident in sapiente alias,
+              placeat ipsam atque est?
+            </p>
 
             <div class="icons">
-                <i class="fa-solid fa-calendar"></i>
-                <i class="fa-solid fa-heart"></i>
-                
-            
+              <i class="fa-solid fa-calendar"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
+          </div>
         </div>
-       </div>
         <div class="blog-card">
-            <img src="images/blog_3.jpg" alt="">
-            <div class="content"> 
+          <img src="images/blog_3.jpg" alt="" />
+          <div class="content">
             <h3>Blogger</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt impedit totam eos earum quos quis sit quae alias vero officia!</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+              impedit totam eos earum quos quis sit quae alias vero officia!
+            </p>
 
             <div class="icons">
-                <i class="fa-solid fa-calendar"></i>
-                <i class="fa-solid fa-heart"></i>
-               
+              <i class="fa-solid fa-calendar"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-</section>
-    
+      </div>
+    </section>
+
     <div class="footer">
-        
-    
-  <div class="container"> 
-    
-      <div class="logo">
-        <img  src="images/logo.png">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Is quaererat ipsa spernatur ad seguire, dolore eventiet vitae quasi. Excepturi ipsa hate impedes seguire at hic velit, less vero aret. Pleasure?</p> 
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Is
+            quaererat ipsa spernatur ad seguire, dolore eventiet vitae quasi.
+            Excepturi ipsa hate impedes seguire at hic velit, less vero aret.
+            Pleasure?
+          </p>
+        </div>
+        <div class="link">
+          <h3>Quick Link</h3>
 
           <ul>
             <li>
@@ -302,71 +658,47 @@
             </li>
           </ul>
         </div>
-      </div>
-       <div class="link">
 
-    <h3>  Quick Link</h3>
-
-    <ul>
-        <li> 
-            <a href="#"> Home  </a>
-        </li>
-         <li> 
-            <a href="#"> About  </a>
-        </li>
-
-         <li> 
-            <a href="#"> Featured  </a>
-        </li>
-         <li> 
-            <a href="#">Arrivals  </a>
-        </li>
-         <li> 
-            <a href="#">Reviews  </a>
-        </li>
-         <li> 
-            <a href="#">Blog </a>
-        </li>
-    </ul>
-      </div>
-
-       <div clas="contact">
-        <h3> Contact Info</h3>
-        <ul>
-
-            <li><i class="fa-solid fa-phone"> </i><span> +94 12 345 6785</span> </li>
-             <li><i class="fa-solid fa-phone"> </i>  <span>+94 12 678 2345</span></li>
-              <li><i class="fa-solid fa-envelope"></i> bookstore 123@gmail.com</li>
-        </ul>
-
-      </div>
-       <div class="social_media">
-              <h3> Follow Us</h3>
-         <div class="social_icon">
-            <ul>
-                <li>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+        <div clas="contact">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone"> </i><span> +94 12 345 6785</span>
             </li>
+            <li>
+              <i class="fa-solid fa-phone"> </i> <span>+94 12 678 2345</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i> bookstore 123@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="social_media">
+          <h3>Follow Us</h3>
+          <div class="social_icon">
+            <ul>
+              <li>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
             </ul>
-         </div>
+          </div>
+        </div>
 
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="You email id here "
+              id="email-input"
+            /><br />
+            <button type="submit" id="submit-input">subscribe</button>
+          </form>
+        </div>
       </div>
-      
-      <div class=" newsletter">
-        <h3>Newsletter</h3>
-      <form>
-       
-            <input type="email" placeholder="You email id here " id="email-input"><br>
-            <button type="submit"  id="submit-input"> subscribe</button>
-        
-      </form>
-      </div>
-
-
-      </div>   
     </div>
   </body>
 </html>
