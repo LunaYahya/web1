@@ -48,5 +48,65 @@ form button {
 }
 .logo p{width: 300px; line-height: 1.5;}
 
+.blog-section {
+    text-align:center;
+     padding: 20px ;
+    background: #f7f7f7;
+}
 
+.blog-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.blog-container {
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 350px;
+    background: white;
+    border: 1px solid #d7e1e8;
+    border-radius: 8px;
+    overflow: hidden; 
+    text-align: left;}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 250px;
+   
+}
+.blog-card .content {
+    padding: 20px; 
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #20a9a9;
+}
+
+.content p {
+    font-size: 15px;
+    color: #121212;
+    font: weight 400px;;
+}
+
+.blog-card .icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 18px;
+    color: #20a9a9;
+}
 
