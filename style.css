@@ -280,6 +280,7 @@ header {
     }
 
     .hero-title , .highlight{
+        margin-top:50px;
         font-size:3rem;
     }
 
