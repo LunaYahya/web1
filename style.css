@@ -1151,3 +1151,21 @@ header {
     font-size: 18px;
     color: var(--main-color);
 }
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.copyright i {
+    color: var(--main-color);
+    margin: 0 5px;
+}
+
+.copyright span {
+    color: var(--main-color);
+}
