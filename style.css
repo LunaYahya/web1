@@ -72,8 +72,10 @@ form button {
     background: white;
     border: 1px solid #d7e1e8;
     border-radius: 8px;
+    text-align: left;
     overflow: hidden; 
-    text-align: left;}
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.19);}
 
 .blog-card:hover {
     transform: translateY(-5px);
